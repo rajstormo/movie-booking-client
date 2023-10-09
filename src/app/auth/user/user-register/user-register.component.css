@@ -1,0 +1,85 @@
+/* Style the registration container */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
+  height: calc(100vh - 5rem);
+}
+
+
+/* Style the registration heading */
+.registration-heading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Style the registration form container */
+.registration-form-container {
+  margin-top: 5%;
+  height: 80%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  /* border: 1px solid #ccc; */
+  /* border: 3px solid blue; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.name-container, .password-container, .email-container {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+/* Style the form labels */
+.form-label {
+  /* display: block; */
+  font-weight: bold;
+}
+
+/* Style the form inputs */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Style the submit button */
+.btn-register {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Style the submit button on hover */
+.btn-register:hover {
+  background-color: #0056b3;
+}
+
+/* Style the "Already have an account" link */
+.already-have-account {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Style the login link within the "Already have an account" text */
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Style the login link on hover */
+.login-link:hover {
+  text-decoration: underline;
+}

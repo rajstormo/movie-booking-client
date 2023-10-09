@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="login-container">
+    <h2 class="login-heading">Login</h2>
+    <form
+      class="login-form"
+      #loginForm="ngForm"
+      (ngSubmit)="handleLoginData(loginForm.value)"
+    >
+      <div class="form-group">
+        <label for="user-email" class="form-label"
+          >Enter username or email</label
+        >
+        <input
+          type="text"
+          id="user-email"
+          name="user_email"
+          placeholder="name or name@something.com"
+          ngModel
+          required
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          ngModel
+          placeholder="Password"
+          required
+          class="form-control"
+        />
+      </div>
+      <input type="submit" value="Login" class="btn-login" />
+    </form>
+    <p class="create-account">
+      Don't have an account?
+      <a href="/register" class="create-account-link">Create one</a>
+    </p>
+  </div>
+</div>

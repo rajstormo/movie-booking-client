@@ -1,0 +1,90 @@
+<div class="registration-container">
+  <div class="registration-form-container">
+    <h2 class="registration-heading">Register an Account</h2>
+    <form
+      #registerForm="ngForm"
+      (ngSubmit)="handleSubmit(registerForm.value)"
+      class="registration-form"
+    >
+      <div class="name-container">
+        <div class="form-group">
+          <label for="fname" class="form-label">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstName"
+            ngModel
+            placeholder="John"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lname" class="form-label">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastName"
+            placeholder="Doe"
+            ngModel
+            class="form-control"
+          />
+        </div>
+      </div>
+
+      <div class="email-container">
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            ngModel
+            placeholder="name@example.com"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            ngModel
+            placeholder="rajstormo"
+            class="form-control"
+          />
+        </div>
+      </div>
+
+      <div class="password-container">
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            ngModel
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password" class="form-label"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirmPassword"
+            ngModel
+            class="form-control"
+          />
+        </div>
+      </div>
+      <input type="submit" value="Register" class="btn-register" />
+    </form>
+    <p class="already-have-account">
+      Already have an account?
+      <a routerLink="/login" class="login-link">Login</a>
+    </p>
+  </div>
+</div>

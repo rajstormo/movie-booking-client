@@ -1,0 +1,13 @@
+<ul class="movie-list">
+  <li *ngFor="let movie of movies" class="movie-item">
+    <div class="movie-detail"></div>
+    <div class="movie-poster" routerLink="/movie/{{movie._id}}">
+      <img [src]="movie.poster" alt="{{ movie.title}} Poster" />
+      <p>⭐ {{movie.imdbRating.$numberDecimal}}/10</p>
+    </div>
+    <div class="movie-details">
+      <h2>{{ movie.title }}</h2>
+      <p>{{ movie.language.join(', ') }}</p>
+    </div>
+  </li>
+</ul>  
